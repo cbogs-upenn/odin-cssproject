@@ -108,7 +108,7 @@ body {
 .info-header {
     font-size: 36px;
     font-weight: 700;
-    font-color: var(--darkcolor);
+    color: var(--darkcolor);
     text-align: center;
 }
 
@@ -168,7 +168,7 @@ body {
 .footer {
     background-color: var(--darkcolor);
     color: var(--lightcolor);
-    height: 100px;\
+    height: 100px;
     margin-top: 70px;
     display: flex;
     justify-content: center;
@@ -176,21 +176,14 @@ body {
 }
 
 
+#hero-button {
+    margin-top: 15px;
+}
+
 .button {
     background-color: var(--medcolor);
     padding: 8px 25px;
     color: var(--brightcolor);
     border: 3px solid var(--lightcolor);
     border-radius: 10px;
-}
-
-#hero-button {
-    margin-top: 15px;
-    border: 0px;
-
-}
-
-#cta-button {
-
-
 }
