@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 :root {
     --darkcolor: #1F2937;
     --lightcolor: #e5e7eb;
@@ -7,7 +9,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Roboto, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -25,7 +27,7 @@ body {
 
 .headerlogo {
     font-size: 24px;
-    font-weight: 900;
+    font-weight: 700;
     color: var(--brightcolor);
 }
 
@@ -74,6 +76,8 @@ body {
 .heroleft {
     padding-left: 100px;
     max-width: 20em;
+    display: flex;
+    flex-direction: column;
 }
 
 .heroright {
@@ -89,23 +93,69 @@ body {
 .herotext {
     font-size: 18px;
     color: var(--lightcolor);
+    margin-top: 5px;
+}
+
+.info {
+    margin-top: 40px;
+}
+
+.info-header {
+    font-size: 36px;
+    font-weight: 700;
+    font-color: var(--darkcolor);
+    text-align: center;
+}
+
+.info-boxes {
+    display: flex;
+    margin: 50px 100px;
+    justify-content: space-around;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
 }
 
 .testimonial {
     background-color: var(--lightcolor);
+    font-size: 36px;
+    font-weight: 400;
+    font-style: italic;
     margin: 35px 0;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding: 100px 350px;
+}
+
+
+.byline {
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .calltoaction {
     display: flex;
     justify-content: center;
-    margin: 75px 0;
+    margin: 40px 0 75px 0;
 }
 
 .cta-card {
     background-color: var(--medcolor);
     margin: 10px auto;
     padding: 10px 150px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: var(--lightcolor);
+    border-radius: 10px;
+
 
 }
 
@@ -113,8 +163,28 @@ body {
     background-color: var(--darkcolor);
     color: var(--lightcolor);
     height: 100px;\
-    margin-top: 35px;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.button {
+    background-color: var(--medcolor);
+    padding: 8px 25px;
+    color: var(--brightcolor);
+    border: 3px solid var(--lightcolor);
+    border-radius: 10px;
+}
+
+#hero-button {
+    margin-top: 15px;
+    border: 0px;
+
+}
+
+#cta-button {
+
+
 }
