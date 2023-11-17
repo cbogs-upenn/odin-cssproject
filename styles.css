@@ -2,6 +2,7 @@
     --darkcolor: #1F2937;
     --lightcolor: #e5e7eb;
     --medcolor: #3882f6;
+    --brightcolor: #f9faf8;
 }
 
 * {
@@ -23,9 +24,9 @@ body {
 }
 
 .headerlogo {
-    font-size: 48px;
+    font-size: 24px;
     font-weight: 900;
-    color: #f9faf8;
+    color: var(--brightcolor);
 }
 
 .headerlinks {
@@ -56,23 +57,38 @@ body {
 .hero {
     background-color: var(--darkcolor);
     height: 500px;
-    color: var(--lightcolor);
+    padding: 50px 0;
+    color: var(--brightcolor);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 
 }
 
 #heroimage {
-    height: 400px;
+    height: 250px;
     padding-left: 20px;
 }
 
 .heroleft {
     padding-left: 100px;
+    max-width: 20em;
 }
 
 .heroright {
     padding-right: 100px;
+}
+
+.herohead {
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--lightcolor)
+}
+
+.herotext {
+    font-size: 18px;
+    color: var(--lightcolor);
 }
 
 .testimonial {
