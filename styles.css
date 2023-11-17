@@ -176,14 +176,26 @@ body {
 }
 
 
-#hero-button {
+.hero-button {
     margin-top: 15px;
+    border: 0;
+    background-color: var(--medcolor);
+    padding: 8px 25px;
+    color: var(--lightcolor);
+    border-radius: 10px;
+    max-width: 150px;
+    text-align: center;
+}
+
+.cta-button {
+    padding: 8px 25px;
+    color: var(--lightcolor);
+    border: 3px solid var(--lightcolor);
+    border-radius: 10px;
 }
 
 .button {
     background-color: var(--medcolor);
-    padding: 8px 25px;
-    color: var(--brightcolor);
-    border: 3px solid var(--lightcolor);
-    border-radius: 10px;
+    color: var(--lightcolor);
+    border: 0;
 }
