@@ -1,3 +1,104 @@
+:root {
+    --darkcolor: #1F2937;
+    --lightcolor: #e5e7eb;
+    --medcolor: #3882f6;
+}
+
 * {
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    background-color: var(--darkcolor);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.headerlogo {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.headerlinks {
+    font-size: 18px;
+    color: var(--lightcolor);
+}
+
+.headerlinks ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2em;
+    padding-right: 15em;
+}
+
+.headerlinks a {
+    text-decoration: none;
+    color: var(--lightcolor);
+}
+
+.headerlinks a:hover {
+    color: yellow;
+}
+
+.headerlinks a:visted {
+    color: var(--lightcolor);
+}
+
+.hero {
+    background-color: var(--darkcolor);
+    height: 500px;
+    color: var(--lightcolor);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#heroimage {
+    height: 400px;
+    padding-left: 20px;
+}
+
+.heroleft {
+    padding-left: 100px;
+}
+
+.heroright {
+    padding-right: 100px;
+}
+
+.testimonial {
+    background-color: var(--lightcolor);
+    margin: 35px 0;
+}
+
+.calltoaction {
+    display: flex;
+    justify-content: center;
+    margin: 75px 0;
+}
+
+.cta-card {
+    background-color: var(--medcolor);
+    margin: 10px auto;
+    padding: 10px 150px;
+
+}
+
+.footer {
+    background-color: var(--darkcolor);
+    color: var(--lightcolor);
+    height: 100px;\
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
